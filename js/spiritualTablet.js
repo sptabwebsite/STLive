@@ -66,5 +66,5 @@ function validateSelectLanguage(){
         document.getElementById("tamilbooks").style.display="none"
         document.getElementById("EnglishBooks").style.display="block"
     }
-    return true
+    return true;
 }

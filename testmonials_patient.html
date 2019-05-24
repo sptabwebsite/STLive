@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spiritual Tablet / Patient Experince</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/ourStyles.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+    <!--ADDING FAVICON-->
+    <link rel="icon" href="favicon.png" sizes="16x16">
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBemnic06byg8_cek7xp5D45zFfDU4np5I",
+    authDomain: "spiritualtablatesdev.firebaseapp.com",
+    databaseURL: "https://spiritualtablatesdev.firebaseio.com",
+    projectId: "spiritualtablatesdev",
+    storageBucket: "spiritualtablatesdev.appspot.com",
+    messagingSenderId: "187478475878"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!--JAVASCRIPT-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    
+
+    <style>
+        #testmonialsPage,
+        #patientExpPage {
+            background-color: #022f5a;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            validateSelectExperience();
+            $("audio").on("play", function(){
+                var _this = $(this);
+                $("audio").each(function(i,el){
+                    if(!$(el).is(_this))
+                        $(el).get(0).pause();
+                });
+            });
+        });
+        
+    </script>
+</head>
+
+<body>
+
+    <script>
+        displayMenu();
+    </script>
+
+    <div class="container BodyAread">
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1 class="mainHeading">Patient Experiences</h1>
+                <div class="selectLanguageDiv">
+                    <label>Select Language</label>
+                    <select class="form-group" name="selectLanguage" id="experienceLanguage" onchange="validateSelectExperience()">
+<!--                        <option selected="selected" value="-">--Select Language--</option>-->
+                        <option value="English">English</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Tamil">PDF</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div style="text-align: center; color:#022f5a ">
+            <h3>Health Benefits through Mediatation</h3>
+            <h4>Patients Experinces</h4>
+        </div>
+        <div class="container">
+            <section id="EnglishAudios">
+                <table class="table table-striped table-bordered table-hover expTable">
+
+                    <tbody>
+                        <tr>
+                            <td width="15%"><img src="images/Experiences/1.jpeg" class="img-responsive"></td>
+                            <td style="vertical-align: middle">Miraculous Power Of Meditation</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/Experience%2FMiraculosPowerOfMeditation.mp3?alt=media&token=86212d34-c1c7-4f3d-a2c1-4cee23a92f35" controls="controls"></audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+            <section id="TeluguAudios">
+            <table class="table table-striped table-bordered table-hover expTable">
+
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: middle">Badri</td>
+                            <td style="vertical-align: middle">Gastric &amp; Allergies</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FBhadri_gastric%26allergies?alt=media&token=62987e72-6b6c-4884-b665-4128785e9ca0" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Bharati</td>
+                            <td style="vertical-align: middle">Knee</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FBharati_knee.mp4?alt=media&token=adce751a-037f-427c-bb93-c7dab69b016f" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Dharmagowri</td>
+                            <td style="vertical-align: middle">Eye &amp; Digestion</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FDharmagowri_eye_digestion.mp4?alt=media&token=ad9c3c84-6e07-4b6a-88a5-9a2204f99b7c" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Jayashree</td>
+                            <td style="vertical-align: middle">Uterus</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FJayasree_Uterus?alt=media&token=95e6fa41-811a-4521-ac00-8c4ae55370d6" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Lakshmi</td>
+                            <td style="vertical-align: middle">Gastric &amp; Leg pain</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FLakshmi_legpain%2Cgastric?alt=media&token=88a7437d-2fb4-4cb6-a28b-9c45c966a489" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Lakshmi Prasoona</td>
+                            <td style="vertical-align: middle">Fistula</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Flakshmiprasoona_pistula?alt=media&token=097f8d6e-395a-4d23-959b-d562a7a97a90" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Maheswari</td>
+                            <td style="vertical-align: middle">Skin &amp; Food Allergies</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FMaheswari_skin_food%20allergies?alt=media&token=edbff9ba-d512-4068-ab26-ab5f35a76378" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Mallikarjun</td>
+                            <td style="vertical-align: middle">Job</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Fmallikarjun_job?alt=media&token=3b44e61a-a3c6-4a0d-b2dd-242222360353" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Mani</td>
+                            <td style="vertical-align: middle">Knee pain</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Fmani_kneepain?alt=media&token=6849e04e-9421-490f-99f9-d89c938ba252" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Manikanta</td>
+                            <td style="vertical-align: middle">Blood Problem</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Fmanikanta_bloodproblem?alt=media&token=8d530d28-1eb3-4a85-9496-b6bffcfcd7f1" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Nagadurga</td>
+                            <td style="vertical-align: middle">Fear</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FNagadurga_fear_social.mp4?alt=media&token=ed224dcb-78f8-40ec-822d-7fb591a21585" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Padmaja</td>
+                            <td style="vertical-align: middle">Anger</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FPadmaja_anger.mp3?alt=media&token=dadefcbe-1dfe-48bc-a138-aedf54c33b78" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Prameela</td>
+                            <td style="vertical-align: middle">Gastric &amp; Headache</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FPrameela_headache_gastric?alt=media&token=c7d79cf8-2720-4b08-965d-3c14897e91b4" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Ramadevi</td>
+                            <td style="vertical-align: middle">Sciatica</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRamadevi_sciatica?alt=media&token=5958882e-ff14-42b9-973d-cf2e3c28bf46" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Ramani</td>
+                            <td style="vertical-align: middle">Headache</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRamani_headache_profession?alt=media&token=76c39486-e338-4c10-a22d-148587d131eb" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Ramanjaneyulu</td>
+                            <td style="vertical-align: middle">BP,Vision,Diabetics</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRamanjaneyulu_BP%2Cvision%2Cdiabetes?alt=media&token=61c66062-afe5-41ba-838c-ccd6f5bafc9f" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Rama Padmaja</td>
+                            <td style="vertical-align: middle">Asthma</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRamaPadmaja_asthma?alt=media&token=9a13d48f-4ddd-4f63-8433-75b7a0293f7b" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Ravi</td>
+                            <td style="vertical-align: middle">Health Perceprtion</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRavi_healthperception_sixpassions?alt=media&token=23f95bd1-4812-436f-8412-4143a838838c" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Rekha</td>
+                            <td style="vertical-align: middle">Migrane</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRekha_migraine?alt=media&token=506ac76a-955c-42ae-84ed-4b4457d6d033" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Rukmini</td>
+                            <td style="vertical-align: middle">Acidity &amp; Sciatica</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FRukmini_acidity-sciatica?alt=media&token=3129d775-62a0-4942-bcac-341529748157" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Sailaja</td>
+                            <td style="vertical-align: middle">Kidney Stones</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FSailaja_kidneystones?alt=media&token=38a4307c-1b19-49d1-8a90-8219f46ef5e2" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Santoshi</td>
+                            <td style="vertical-align: middle">Parenting</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FSantoshi_parenting?alt=media&token=2f059409-2d23-4217-93ba-7befe0c97ee6" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Shailaja</td>
+                            <td style="vertical-align: middle">Backpain</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FShailaja_backpain.mp4?alt=media&token=21d12d6c-d481-41cc-a287-66c8c871d639" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Sri Laxmi</td>
+                            <td style="vertical-align: middle">Kneejoints</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FSrilaxmi_kneejoints?alt=media&token=8fbae942-8b28-444c-b8cd-f9d0469b520e" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Susmasaraf</td>
+                            <td style="vertical-align: middle">Alopecia</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Fsusmasaraf_alopecia.mp3?alt=media&token=960e13d3-bbe2-4cac-842e-959c0bbe93c4" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Swathi</td>
+                            <td style="vertical-align: middle">Spiritual Parenting</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FSwathi_spiritualparenting?alt=media&token=048c7948-4eaa-4b59-b604-44b7272ada58" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Upender</td>
+                            <td style="vertical-align: middle">Pshycological</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FUpender_pyschological.mp3?alt=media&token=9bc1c59c-87d4-4f9a-919e-23752134937a" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Vara Laxmi</td>
+                            <td style="vertical-align: middle">Husband Health</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2Fvaralaxmi_husbandshealth?alt=media&token=4af0e7fb-b40f-4829-bce1-0211d2ea8797" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">venkat Rao</td>
+                            <td style="vertical-align: middle">Asthama</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FVenkatRao_Asthma?alt=media&token=dbd633c0-d2ac-47d5-8541-91d62f4c37e8" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Vijaya</td>
+                            <td style="vertical-align: middle">Nerves</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FVijaya_nerves?alt=media&token=ce1b3f1c-270e-4f6a-ae03-e377e34af4e5" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle">Viswanath</td>
+                            <td style="vertical-align: middle">Social</td>
+                            <td style="vertical-align: middle">
+                                <audio src="https://firebasestorage.googleapis.com/v0/b/spiritualtablatesdev.appspot.com/o/ExperienceTelugu%2FViswanath_social?alt=media&token=c600f467-1cc0-423f-a88e-09301b76cdbd" controls="controls"></audio>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            
+            </section>
+            <section id="patientText">
+
+
+                <table class="table table-striped table-bordered table-hover expTable">
+                    <thead>
+
+                        <tr>
+                            <th>S No</th>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Experince Link</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>C.S Thakur</td>
+                            <td>Raipur</td>
+                            <td><a href="https://drive.google.com/open?id=1Tw6YWZEqvyKZPJuuHBJsu39nFuyegb4h" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>02</td>
+                            <td>G. Koteswara Rao</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=1SGadOOlwiJuqPRBbrmhb0CmlKIMI1VRU" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>03</td>
+                            <td>Surya Archana</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=1Ocb1HCljZzug_wjYfYDcXDHYKunxYMZe" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>04</td>
+                            <td>P Manikanta</td>
+                            <td>Rajhmundry</td>
+                            <td><a href="https://drive.google.com/open?id=1w11_j8OTyGRf5Iwwv_QjVlGnaWiZMiNI" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>05</td>
+                            <td>Suresh Chowhan</td>
+                            <td>Bengaluru</td>
+                            <td><a href="https://drive.google.com/open?id=1UyXOCjPteBEcI8v3ONWSEnOwbdWCrFPt" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>06</td>
+                            <td>Ramani</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=15waNCYajDDRMockXwvSpNKxpcjvTl6XK" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>07</td>
+                            <td>M.S Asha</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=1nhLLwSoI_WPd8TZRZfc5Fgt9pMPtXSKO" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>08</td>
+                            <td>Ms. Suvarna</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=1mDbnXaDkZjsUmdPsZKZ2GrKvTC1YrWHN" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>09</td>
+                            <td>Ms. Sudha</td>
+                            <td>Tirupati</td>
+                            <td><a href="https://drive.google.com/open?id=1jAEtDhAV_zHUDIyJtp9ExtIccR2ebOio" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>10</td>
+                            <td>Smt. Prasanna</td>
+                            <td>-</td>
+                            <td><a href="https://drive.google.com/open?id=1fnYmijhW7xBb3tsx2gjmB5pBVrlRixRL" target="_blank">Read More</a></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>11</td>
+                            <td>Smt. A.Rangamma.</td>
+                            <td>Visakhapatnam</td>
+                            <td><a href="https://drive.google.com/open?id=1xYtA9QYiLRQLXvnJPaByfThheokFcEGx" target="_blank">Read More</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>12</td>
+                            <td>Smt. Mangaveni</td>
+                            <td>Bhilai</td>
+                            <td><a href="https://drive.google.com/open?id=1vtjktQsejBze-SLtXE7C45I9ZNanef3B" target="_blank">Read More</a></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>13</td>
+                            <td>Smt. Rajya Lakshmi</td>
+                            <td>Mylavaram,</td>
+                            <td><a href="https://drive.google.com/open?id=1FyQQtDCn-PJxubtEAZwomHYhcgBXTNye" target="_blank">Read More</a></td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td>14</td>
+                            <td>Mrs.Rajya Lakshmi</td>
+                            <td>-</td>
+                            <td><a href="https://drive.google.com/open?id=1rIRC9ioU0gKwfkm3S60va335FfvDmADX" target="_blank">Read More</a></td>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+
+    </div>
+
+    <!--*********** FOOTER SECTION ***********-->
+    <script>
+        displayFooter();
+    </script>
+</body>
+
+</html>
