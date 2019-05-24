@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request For Counseling</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/ourStyles.css">
+    
+    <!--ADDING FAVICON-->
+    <link rel="icon" href="favicon.png" sizes="16x16">
+    
+        <!--JAVASCRIPT-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/index.js"></script>
+    <script src="js/RequestForCounseling.js"></script>
+    
+        <!--FIREBASE DATA BASE-->
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyBemnic06byg8_cek7xp5D45zFfDU4np5I",
+            authDomain: "spiritualtablatesdev.firebaseapp.com",
+            databaseURL: "https://spiritualtablatesdev.firebaseio.com",
+            projectId: "spiritualtablatesdev",
+            storageBucket: "spiritualtablatesdev.appspot.com",
+            messagingSenderId: "187478475878"
+          };
+          firebase.initializeApp(config);
+        </script>
+    
+     <style>
+        #patientResigrationPage,
+        #RCPage{
+            background-color: #022f5a;
+        }  
+    </style>
+    
+    </head>
+
+<body>
+    <script>displayMenu();</script>
+    <div class="container BodyAread">
+    <div class="container" id="RequestForCounseling">
+        <form class="form-inline" action="">
+            <div class=" container BG_Color_1">
+                <h3>Request For Counseling</h3>
+
+                <!--FIRST NAME-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="RC_FirstName"><span class="mandatory">*</span> First Name : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="RC_FirstName" placeholder="Enter your First Name" name="First Name" onblur="validateFirstName()">
+                        <span class="error" id="RC_FirstNameError"> &nbsp;</span>
+                    </div>
+                </div>
+
+
+                <!--LAST NAME-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="RC_LastName">Last Name : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="RC_LastName" placeholder="Enter your Last Name" name="Last Name">
+                         <span class="error" id="RC_LastNameError"> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!--GENDER-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <span class="mandatory">*</span><label for="RC_Gender">Gender : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <select class="form-control" id="RC_Gender" name="RC_Gender" onblur="validateGender()">
+                            <option selected="selected" value="0">--Select Gender--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                        </select>
+                         <span class="error" id="RC_GenderError"> &nbsp;</span>
+                    </div>
+                </div>
+
+
+                <!--AGE-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for=""> Age : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <div class="ageDiv">
+                            <label for="RC_years"><span class="mandatory">*</span> Years : </label>
+                            <input type="number" class="form-control yearDiv" id="RC_years" placeholder="Years" name="Years" onblur="validateYears()">
+                             <span class="error" id="RC_yearsError"> &nbsp;</span>
+                        </div>
+
+                        <div class="ageDiv">
+                            <label for="">Months : </label>
+                            <input type="number" class="form-control yearDiv" id="RC_Months" placeholder="Months" name="Months" onblur="validateMonths()">
+                        </div>
+                         <span class="error" id="RC_MonthsError"> &nbsp;</span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6">
+                    <div class="lableDiv">
+                        <span class="mandatory">*</span> <label for="RC_Mobile">Mobile : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="number" class="form-control" id="RC_Mobile" placeholder="Enter Mobile Number" name="Mobile Number" onblur="validateMobile()">
+                         <span class="error" id="RC_MobileError"> &nbsp;</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="lableDiv">
+                        <span class="mandatory">*</span> <label for="RC_Email">Email : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="email" class="form-control" id="RC_Email" placeholder="Enter email id" name="Referred email" onblur="validateEmail()">
+                         <span class="error" id="RC_EmailError"> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!--Disease-->
+                <div class="col-sm-6">
+                    <br>
+                    <div class="lableDiv">
+                        <label for="RC_Disease"><span class="mandatory">*</span>Disease : </label>
+                    </div>
+                    <div class="inputDiv">
+
+                        <select class="form-control" name="Disease" id="RC_Disease" onblur="validateDisease()">
+                            <option selected="selected" value="0">--Select Disease--</option>
+                            <option value="Albinism">Albinism</option>
+                            <option value="Alcoholic hepatitis">Alcoholic hepatitis</option>
+                            <option value="Allergy">Allergy</option>
+                            <option value="Alzheimer's disease">Alzheimer's disease</option>
+                            <option value="Amblyopia">Amblyopia</option>
+                            <option value="Amebiasis">Amebiasis</option>
+                            <option value="Anemia">Anemia</option>
+                            <option value="Appendicitis">Appendicitis</option>
+                            <option value="Appendix Problems">Appendix Problems</option>
+                            <option value="Arthritis">Arthritis</option>
+                            <option value="Aseptic meningitis">Aseptic meningitis</option>
+                            <option value="Asthma">Asthma</option>
+                            <option value="Astigmatism">Astigmatism</option>
+                            <option value="Atherosclerosis">Atherosclerosis</option>
+                            <option value="Back pain">Back pain</option>
+                            <option value="Bacteria meningitits">Bacteria meningitits</option>
+                            <option value="Beriberi">Beriberi</option>
+                            <option value="BloodPressure">BloodPressure</option>
+                            <option value="Bone Cancer">Bone Cancer</option>
+                            <option value="Botulism">Botulism</option>
+                            <option value="Brain Tumor">Brain Tumor</option>
+                            <option value="Breast cancer">Breast cancer</option>
+                            <option value="Bronchitis">Bronchitis</option>
+                            <option value="Brucellosis">Brucellosis</option>
+                            <option value="Bubonic plague">Bubonic plague</option>
+                            <option value="Calculi">Calculi</option>
+                            <option value="Campylobacter infection">Campylobacter infection</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Candidiasis">Candidiasis</option>
+                            <option value="Carbon monoxide poisoning">Carbon monoxide poisoning</option>
+                            <option value="Celiacs disease">Celiacs disease</option>
+                            <option value="Cerebral palsy">Cerebral palsy</option>
+                            <option value="Chagas disease">Chagas disease</option>
+                            <option value="Chalazion">Chalazion</option>
+                            <option value="Chancroid">Chancroid</option>
+                            <option value="Chickenpox">Chickenpox</option>
+                            <option value="Chlamydia">Chlamydia</option>
+                            <option value="Chlamydia trachomatis">Chlamydia trachomatis</option>
+                            <option value="Cholera">Cholera</option>
+                            <option value="Chronic fatigue syndrome">Chronic fatigue syndrome</option>
+                            <option value="Circadian rhythm sleep disorder">Circadian rhythm sleep disorder</option>
+                            <option value="Coccyx Problems">Coccyx Problems</option>
+                            <option value="Cold &amp; Cough">Cold &amp; Cough</option>
+                            <option value="Colitis">Colitis</option>
+                            <option value="Condyloma">Condyloma</option>
+                            <option value="Congestive heart disease">Congestive heart disease</option>
+                            <option value="Coronary heart disease">Coronary heart disease</option>
+                            <option value="Cretinism">Cretinism</option>
+                            <option value="Crohn's Disease">Crohn's Disease</option>
+                            <option value="Dehydration">Dehydration</option>
+                            <option value="Dengue">Dengue</option>
+                            <option value="Depression">Depression</option>
+                            <option value="Diabetes mellitus">Diabetes mellitus</option>
+                            <option value="Diabeties">Diabeties</option>
+                            <option value="Dialysis">Dialysis</option>
+                            <option value="Diphtheria">Diphtheria</option>
+                            <option value="Ear drum problems">Ear drum problems</option>
+                            <option value="Ear Infection">Ear Infection</option>
+                            <option value="Ebola">Ebola</option>
+                            <option value="Emphysema">Emphysema</option>
+                            <option value="Encephalitis">Encephalitis</option>
+                            <option value="Epilepsy">Epilepsy</option>
+                            <option value="Erectile dysfunctions">Erectile dysfunctions</option>
+                            <option value="Eye Infection">Eye Infection</option>
+                            <option value="Fever">Fever</option>
+                            <option value="Filaria">Filaria</option>
+                            <option value="Foodborne illness">Foodborne illness</option>
+                            <option value="Gangrene">Gangrene</option>
+                            <option value="Gastroenteritis">Gastroenteritis</option>
+                            <option value="Genital herpes">Genital herpes</option>
+                            <option value="GERD">GERD</option>
+                            <option value="Glaucoma">Glaucoma</option>
+                            <option value="Goitre">Goitre</option>
+                            <option value="Gonorrhea">Gonorrhea</option>
+                            <option value="Hair problems">Hair problems</option>
+                            <option value="Headache">Headache</option>
+                            <option value="Heart Attack">Heart Attack</option>
+                            <option value="Heart disease">Heart disease</option>
+                            <option value="Hepatitis A">Hepatitis A</option>
+                            <option value="hepatitis b">hepatitis b</option>
+                            <option value="hepatitis c">hepatitis c</option>
+                            <option value="Hepatitis D">Hepatitis D</option>
+                            <option value="Hepatitis E">Hepatitis E</option>
+                            <option value="Histiocytosis (Childhood Cancer)">Histiocytosis (Childhood Cancer)</option>
+                            <option value="HIV">HIV</option>
+                            <option value="Human papillomavirus">Human papillomavirus</option>
+                            <option value="Huntington's disease">Huntington's disease</option>
+                            <option value="Hypermetropia">Hypermetropia</option>
+                            <option value="Hyperopia">Hyperopia</option>
+                            <option value="Hyperthyroidism">Hyperthyroidism</option>
+                            <option value="Hypothyroid">Hypothyroid</option>
+                            <option value="Impetigo">Impetigo</option>
+                            <option value="Infertility">Infertility</option>
+                            <option value="Influenza">Influenza</option>
+                            <option value="Interstitial cystitis">Interstitial cystitis</option>
+                            <option value="Iritis">Iritis</option>
+                            <option value="Iron-deficiency anemia">Iron-deficiency anemia</option>
+                            <option value="Irritable bowel syndrom">Irritable bowel syndrom</option>
+                            <option value="Jaundice">Jaundice</option>
+                            <option value="Kidney Problems">Kidney Problems</option>
+                            <option value="Knee Joint Pains">Knee Joint Pains</option>
+                            <option value="Laryngitis">Laryngitis</option>
+                            <option value="Lead poisoning">Lead poisoning</option>
+                            <option value="Leishmaniasis">Leishmaniasis</option>
+                            <option value="Leprosy">Leprosy</option>
+                            <option value="Leukemia">Leukemia</option>
+                            <option value="Loose Motions">Loose Motions</option>
+                            <option value="Lung Cancer">Lung Cancer</option>
+                            <option value="Lungs Infection">Lungs Infection</option>
+                            <option value="Lupus erythematosus">Lupus erythematosus</option>
+                            <option value="Lymphogranulomavenereum">Lymphogranulomavenereum</option>
+                            <option value="Lymphoma">Lymphoma</option>
+                            <option value="Malaria">Malaria</option>
+                            <option value="Measles">Measles</option>
+                            <option value="Melanoma">Melanoma</option>
+                            <option value="Ménière's disease">Ménière's disease</option>
+                            <option value="Meningitis">Meningitis</option>
+                            <option value="Metastatic cancer">Metastatic cancer</option>
+                            <option value="Migraine">Migraine</option>
+                            <option value="Mononucleosis">Mononucleosis</option>
+                            <option value="Mouth Cancer">Mouth Cancer</option>
+                            <option value="Mouth Infection">Mouth Infection</option>
+                            <option value="Multiple myeloma">Multiple myeloma</option>
+                            <option value="Multiple sclerosis">Multiple sclerosis</option>
+                            <option value="Mumps">Mumps</option>
+                            <option value="Muscular dystrophy">Muscular dystrophy</option>
+                            <option value="Myasthenia gravis">Myasthenia gravis</option>
+                            <option value="Myelitis">Myelitis</option>
+                            <option value="Myoclonus">Myoclonus</option>
+                            <option value="Myopia">Myopia</option>
+                            <option value="Myxedema">Myxedema</option>
+                            <option value="Nail Problems">Nail Problems</option>
+                            <option value="Necrotizing Fasciitis">Necrotizing Fasciitis</option>
+                            <option value="Neoplasm">Neoplasm</option>
+                            <option value="Nevervessness">Nevervessness</option>
+                            <option value="Night blindness">Night blindness</option>
+                            <option value="Non-gonococcal urethritis">Non-gonococcal urethritis</option>
+                            <option value="Obesity">Obesity</option>
+                            <option value="Osteoarthritis">Osteoarthritis</option>
+                            <option value="Osteoporosis">Osteoporosis</option>
+                            <option value="Parkinson's disease">Parkinson's disease</option>
+                            <option value="Pelvic inflammatory disease">Pelvic inflammatory disease</option>
+                            <option value="Peritonitis">Peritonitis</option>
+                            <option value="Pertussis">Pertussis</option>
+                            <option value="Phenylketonuria">Phenylketonuria</option>
+                            <option value="Piles">Piles</option>
+                            <option value="Plague">Plague</option>
+                            <option value="Pneumonia">Pneumonia</option>
+                            <option value="Poliomyelitis">Poliomyelitis</option>
+                            <option value="Porphyria">Porphyria</option>
+                            <option value="Pregnancy Problems">Pregnancy Problems</option>
+                            <option value="Prostatitis">Prostatitis</option>
+                            <option value="Psoriasis">Psoriasis</option>
+                            <option value="Pulmonary embolism">Pulmonary embolism</option>
+                            <option value="Rabies">Rabies</option>
+                            <option value="Retina Problems">Retina Problems</option>
+                            <option value="Rheumatic fever">Rheumatic fever</option>
+                            <option value="Rheumatic heart">Rheumatic heart</option>
+                            <option value="Rheumatism">Rheumatism</option>
+                            <option value="Rheumatoid arthritis">Rheumatoid arthritis</option>
+                            <option value="Rickets">Rickets</option>
+                            <option value="Rocky Mountain spotted fever">Rocky Mountain spotted fever</option>
+                            <option value="Rubella">Rubella</option>
+                            <option value="SARS">SARS</option>
+                            <option value="Scabies">Scabies</option>
+                            <option value="Scarlet fever">Scarlet fever</option>
+                            <option value="Schizophrenia">Schizophrenia</option>
+                            <option value="Sciatic">Sciatic</option>
+                            <option value="Sciatica">Sciatica</option>
+                            <option value="Scleroderma">Scleroderma</option>
+                            <option value="Scrapie">Scrapie</option>
+                            <option value="Scurvy">Scurvy</option>
+                            <option value="Sepsis">Sepsis</option>
+                            <option value="Septicemia">Septicemia</option>
+                            <option value="Shigellosis">Shigellosis</option>
+                            <option value="Sickle-cell anemia">Sickle-cell anemia</option>
+                            <option value="Silicosis">Silicosis</option>
+                            <option value="Sinusitis">Sinusitis</option>
+                            <option value="Skin Cancer">Skin Cancer</option>
+                            <option value="Skin Problem">Skin Problem</option>
+                            <option value="Sleeplessness">Sleeplessness</option>
+                            <option value="Spondylitis">Spondylitis</option>
+                            <option value="Stomach ulcers">Stomach ulcers</option>
+                            <option value="Strabismus">Strabismus</option>
+                            <option value="Strep throat">Strep throat</option>
+                            <option value="Streptococcal infection">Streptococcal infection</option>
+                            <option value="Swelling">Swelling</option>
+                            <option value="Synovitis">Synovitis</option>
+                            <option value="Syphilis">Syphilis</option>
+                            <option value="Taeniasis">Taeniasis</option>
+                            <option value="Tay-Sachs disease">Tay-Sachs disease</option>
+                            <option value="Teeth Problems">Teeth Problems</option>
+                            <option value="Tennis elbow">Tennis elbow</option>
+                            <option value="Teratoma">Teratoma</option>
+                            <option value="Tetanus">Tetanus</option>
+                            <option value="Thalassaemia">Thalassaemia</option>
+                            <option value="Throat Cancer">Throat Cancer</option>
+                            <option value="Throat Infection">Throat Infection</option>
+                            <option value="Thrush">Thrush</option>
+                            <option value="Thymoma">Thymoma</option>
+                            <option value="Thyroid">Thyroid</option>
+                            <option value="Tinnitus">Tinnitus</option>
+                            <option value="Tonsillitis">Tonsillitis</option>
+                            <option value="Tooth decay">Tooth decay</option>
+                            <option value="Toxic shock syndrome">Toxic shock syndrome</option>
+                            <option value="Trichomoniasis">Trichomoniasis</option>
+                            <option value="Trisomy">Trisomy</option>
+                            <option value="Tuberculosis">Tuberculosis</option>
+                            <option value="Tumor">Tumor</option>
+                            <option value="Typhoid fever">Typhoid fever</option>
+                            <option value="Typhus">Typhus</option>
+                            <option value="Ulcerative colitis">Ulcerative colitis</option>
+                            <option value="Ulcers">Ulcers</option>
+                            <option value="Uremia">Uremia</option>
+                            <option value="Urticaria">Urticaria</option>
+                            <option value="Uterus Cancer">Uterus Cancer</option>
+                            <option value="Uveitis">Uveitis</option>
+                            <option value="Varicella">Varicella</option>
+                            <option value="Varicose veins">Varicose veins</option>
+                            <option value="Viral fever">Viral fever</option>
+                            <option value="Viral meningitis">Viral meningitis</option>
+                            <option value="Vitiligo">Vitiligo</option>
+                            <option value="Von Hippel-Lindau disease">Von Hippel-Lindau disease</option>
+                            <option value="Warts">Warts</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    <span class="error" id="RC_DiseaseError"> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!--COUNSELING MODE-->
+                <div class="col-sm-6">
+                    <br>
+                    <div class="lableDiv">
+                        <label for="RC_CounselingMode"><span class="mandatory">*</span>Counseling Mode : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <select class="form-control" id="RC_CounselingMode" name="CounselingMode" onblur="validateCounselingMode()">
+                            <option selected="selected" value="0">--Select--</option>
+                            <option value="Phone">Phone</option>
+                            <option value="E-Mail">E-Mail</option>
+                            <option value="Online">Online</option>
+                            <option value="HomeVisit">Home Visit</option>
+                            <option value="Center">Center</option>
+                        </select>
+                         <span class="error" id="RC_CounselingModeError"> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!--COUNSELING Name-->
+                <div class="col-sm-6">
+                    <br>
+                    <div class="lableDiv">
+                        <label for="RC_SpecificCounselor">Specific Counselor Name (If Known) : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="RC_SpecificCounselor" placeholder="Enter Counselor Name" name="Referred email">
+                         <span class="error" id=""> &nbsp;</span>
+                    </div>
+                </div>
+
+                <!--COUNSELING Name-->
+                <div class="col-sm-6">
+                    <br>
+                    <div class="lableDiv">
+                        <label for="RC_SkypeId">Online Id<br>(Skype / Viber) : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="RC_SkypeId" placeholder="Enter Skype / Viber" name="Referred email">
+                         <span class="error" id=""> &nbsp;</span>
+                    </div>
+                </div>
+
+                <button class="btn-success saveButton" id="RC_SubmitButton" type="button" onclick="validateRC_form()"> Submit </button>
+            </div>
+        </form>
+    </div>
+        </div>
+
+    
+    <!--*********** FOOTER SECTION ***********-->
+    <script>displayFooter();</script>
+</body>
+
+</html>

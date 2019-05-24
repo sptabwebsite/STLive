@@ -1,0 +1,175 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.BodyAread{
+    background-color: #f8f8f8;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    border-radius: 0 !important;
+    margin-bottom: 0!important;
+    background-color: #034483;
+}
+
+.navbar-brand:hover,
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #022f5a !important;
+    margin: 0;
+    color: #3f9ffd
+}
+
+.dropdown-menu > li > a:hover ,
+.dropdown-menu > li > a:focus {
+    background-color: #022f5a !important;
+    margin: 0;
+    color: #fff !important;
+}
+
+
+.navbar-nav{
+    margin-right: 1%;
+}
+
+.dropdown a {
+    color: #3f9ffd;
+}
+
+.dropdown-menu{
+    background-color: #034483;
+    min-width:139px !important;
+    box-shadow: none;
+}
+
+.navbar-brand,
+.dropdown-menu li a{
+      color: #3f9ffd;
+}
+
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+.mainDiv{
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+.leftPannel{
+    width: 15%;
+    height:90.8vh;
+    background-color: #022f5a;
+    padding-left: 1%;
+    color: #3f9ffd;
+     display: table-cell;
+    padding-top: 1%
+}
+
+.leftMenu{
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 3% 2% 3% 2%;
+}
+
+.leftMenu a{
+   color: #3f9ffd;
+    text-decoration: none;
+}
+
+
+.nav >.leftMenu > a:hover,
+.nav >.leftMenu > a:focus {
+    background-color: #3f9ffd !important;
+    margin: 0;
+    color: #022f5a
+}
+
+
+.middlePannel{
+    width: 75%;
+    height:90.8vh;
+    background-color: #fafafa;
+    display: table-cell;
+    margin-top: !important;
+     padding: 2%;
+}
+
+.rightPannel{
+    width: 5%;
+    height:90.8vh;
+    background-color: #022f5a;
+    padding-left: 2%;
+    color: #3f9ffd;
+     display: table-cell;
+}
+
+.table-striped th{
+    background-color: #022f5a;
+    color: #3f9ffd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th{
+    background-color: #e8e8e8;
+}
+
+tableIcon,
+.table-striped tbody > tr > td:nth-child(1),
+.table-striped tbody > tr > td:nth-child(6),
+.table-striped tbody > tr > td:nth-child(7),
+.table-striped tbody > tr > td:nth-child(8),
+.table-striped tbody > tr > td:nth-child(9){
+text-align: center;
+}
+
+tableIcon,
+.table-striped tbody > tr > td:nth-child(6):hover,
+.table-striped tbody > tr > td:nth-child(7):hover,
+.table-striped tbody > tr > td:nth-child(8):hover,
+.table-striped tbody > tr > td:nth-child(9):hover{
+    color: #3f9ffd;
+    cursor: pointer;
+}
+
+
+tableIcon,
+.table-striped tbody > tr > td:nth-child(9):hover{
+    color: red;
+    cursor: pointer;
+}
+
+/***************FORM STYLES***************/
+
+.ComamDiv{
+    padding: 2% 5% 5% 5% 
+}
+
+.closeButton{
+    float: right;
+    opacity: .5;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.closeButton:hover{
+    opacity: 1
+}
+
+.btnRight{
+    float: right;
+}
+

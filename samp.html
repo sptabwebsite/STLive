@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spiritual Tablet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/ourStyles.css"> </head>
+
+<body>
+    <div style="height: 5vw; background-color: aqua; margin-bottom: 5%"> </div>
+    <div class="container">
+        <p>Note : Following order is mandatory for saving the data. 1.Personal Details, 2.Illness Details, 3. Family Details</p>
+        
+        <div class="container">
+            <ul class="personalDetails">
+                <li class="detailsButton">Personal Details</li>
+                <li class="detailsButton">Illness Details</li>
+                <li class="detailsButton">Family Details</li>
+            </ul>
+        </div>
+        <form class="form-inline" action="">
+            <div class="PersonalDetailsDiv">
+                <h3>Personal Details</h3>
+                <!--LAST NAME-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for=""> <span class="mandatory">*</span>Last Name : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter your Last Name" name="Last Name">
+                    </div>
+                </div>
+
+                <!--FIRST NAME-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for=""><span class="mandatory">*</span> First Name : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter your First Name" name="First Name">
+                    </div>
+                </div>
+
+                <!--AGE-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for=""><span class="mandatory">*</span>Age : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <div class="ageDiv">
+                            <label for="">Years : </label>
+                            <input type="number" class="form-control" id="years" placeholder="" name="Years">
+                        </div>
+
+                        <div class="ageDiv">
+                            <label for="">Months : </label>
+                            <input type="number" class="form-control" id="months" placeholder="" name="Months">
+                        </div>
+                    </div>
+                </div>
+
+                <!--GENDER-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="">Gender : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <select class="form-control">
+                            <option selected="selected" value="0">--Select Gender--</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--EDUCATION-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="">Education : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <select class="form-control">
+                            <option selected="selected" value="0">--Select Education--</option>
+                            <option value="">Below 10th</option>
+                            <option value="">Under Graduation</option>
+                            <option value="">Graduation</option>
+                            <option value="">Post Graduation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--PROFESSION-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="">Profession : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter your Profession" name="Mobile Number"> 
+                    </div>
+                </div>
+
+                <!--Guardian-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="">Guardian : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter your Guardian Name" name="Mobile Number"> 
+                    </div>
+                </div>
+
+                <!--Relation-->
+                <div class="form-group col-sm-6">
+                    <div class="lableDiv">
+                        <label for="">Relation : </label>
+                    </div>
+                    <div class="inputDiv">
+                        <select class="form-control">
+                            <option selected="selected" value="0">--Select Relation--</option>
+                            <option value="">Father</option>
+                            <option value="">Mother</option>
+                            <option value="">Daughter</option>
+                            <option value="">Husband</option>
+                            <option value="">Wife</option>
+                            <option value="">Brother</option>
+                            <option value="">Sister</option>
+                            <option value="">Son</option>
+                            <option value="">Uncle</option>
+                            <option value="">Aunt</option>
+                            <option value="">Grandfather</option>
+                            <option value="">Grandmother</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="">
+                    <!--PROFESSION-->
+                    <div class="col-sm-4">
+                        <div class="Ref_lableDiv">
+                            <label for="">Profession : </label>
+                        </div>
+                        <div class="Ref_inputDiv">
+                            <input type="text" class="form-control" id="" placeholder="Enter Guardian Profession" name="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="Ref_lableDiv">
+                            <label for="">Phone No : </label>
+                        </div>
+                        <div class="Ref_inputDiv">
+                            <input type="number" class="form-control" id="" placeholder="Enter Mobile Number" name="Referred Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="Ref_lableDiv">
+                            <label for="email">Email : </label>
+                        </div>
+                        <div class="Ref_inputDiv">
+                            <input type="email" class="form-control" id="" placeholder="Enter email id" name="Referred email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-------------- RESIDENTIAL ADDRESS -------------->
+            
+            <div class="ResidentialAddressDiv">
+                <br><br>
+                <h3>Residential Address</h3>
+                
+                 <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for=""><span class="mandatory">*</span>Mobile No : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <input type="number" class="form-control" id="" placeholder="Enter Mobile Number" name="">
+                    </div>
+                </div>
+                
+                <!--PROFESSION-->
+                <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="">Land : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter Guardian Profession" name="">
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="email">Email : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <input type="email" class="form-control" id="" placeholder="Enter email id" name="Referred email">
+                    </div>
+                </div>
+                
+                <!--ADDRESS-->
+                <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="email">Address : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <textarea class="form-control" id="" rows="3"></textarea>
+                    </div>
+                </div>
+                   
+                <!--STATE-->
+                <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="email">State : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                      <select class="form-control">
+                        <option selected="selected" value="0">--Select State--</option>
+                        <option value="">Abroad</option>
+                        <option value="">Andaman and Nicobar Islands</option>
+                        <option value="">AndhraPradesh</option>
+                        <option value="">applelamma</option>
+                        <option value="">Arunachal Pradesh</option>
+                        <option value="">Assam</option>
+                        <option value="">Bihar</option>
+                        <option value="">Chandigarh</option>
+                        <option value="">Chattisgarh</option>
+                        <option value="">Dadra and Nagar Haveli</option>
+                        <option value="">Daman and Diu</option>
+                        <option value="">Delhi</option>
+                        <option value="">Goa</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Haryana</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Jammu and Kashmir</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Kerala</option>
+                        <option value="">Lakshadweep</option>
+                        <option value="">Madhya Pradesh</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Maharastra</option>
+                        <option value="">Maharshtra</option>
+                        <option value="">Manipur</option>
+                        <option value="">Meghalaya</option>
+                        <option value="">Mizoram</option>
+                        <option value="">Nagaland</option>
+                        <option value="">new delhi</option>
+                        <option value="">Odisha</option>
+                        <option value="">Puducherry</option>
+                        <option value="">Punjab</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Telangana</option>
+                        <option value="">Thelangana</option>
+                        <option value="">Tripura</option>
+                        <option value="">Uttar Pradesh</option>
+                        <option value="">Uttarakhand</option>
+                        <option value="">West Bengal</option>
+                    </select>
+                    </div>
+                </div>
+                 
+                <!--DISTRICT-->
+                <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="email">District : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                      <select class="form-control">
+                        <option selected="selected" value="0">--Select District--</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    </div>
+                </div>
+                <!--CITY-->
+                 <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="">City : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <input type="text" class="form-control" id="" placeholder="Enter City Name" name="">
+                    </div>
+                </div>
+                
+                <!--PINCODE-->
+                 <div class="col-sm-4">
+                    <div class="Ref_lableDiv">
+                        <label for="">Pincode : </label>
+                    </div>
+                    <div class="Ref_inputDiv">
+                        <input type="number" class="form-control" id="" placeholder="Enter Pincode" name="">
+                    </div>
+                </div>
+                
+                
+            </div>
+
+
+            <!--MOBILE-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>Mobile : </label>
+                </div>
+                <div class="inputDiv">
+                    <input type="number" class="form-control" id="" placeholder="Enter your Mobile Number" name="Mobile Number"> </div>
+            </div>
+            <!--Email-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for="email"><span class="mandatory">*</span>Email : </label>
+                </div>
+                <div class="inputDiv">
+                    <input type="email" class="form-control" id="" placeholder="Enter your email" name="email"> </div>
+            </div>
+            <!--Place-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for="email"><span class="mandatory">*</span>Place : </label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" class="form-control" id="" placeholder="Enter your Place" name="Place"> </div>
+            </div>
+            <!--STATE-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>State : </label>
+                </div>
+                <div class="inputDiv">
+                    
+                </div>
+            </div>
+            <!--DIRSTRICT-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>District : </label>
+                </div>
+                <div class="inputDiv">
+                    <select class="form-control">
+                        <option selected="selected" value="0">--Select District--</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <!--City-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for="email"><span class="mandatory">*</span>City : </label>
+                </div>
+                <div class="inputDiv">
+                    <input type="text" class="form-control" id="" placeholder="Enter your City Name" name="City"> </div>
+            </div>
+            <!--PIN-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for="">Pin Code : </label>
+                </div>
+                <div class="inputDiv">
+                    <input type="number" class="form-control" id="" placeholder="Enter your Pin Code" name="Pin Code"> </div>
+            </div>
+
+            <!--Disease-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>Disease : </label>
+                </div>
+                <div class="inputDiv">
+                    <select class="form-control">
+                        <option selected="selected" value="0">--Select Disease--</option>
+                        <option value="">Albinism</option>
+                        <option value="">Alcoholic hepatitis</option>
+                        <option value="">Allergy</option>
+                        <option value="">Alzheimer's disease</option>
+                        <option value="">Amblyopia</option>
+                        <option value="">Amebiasis</option>
+                        <option value="">Anemia</option>
+                        <option value="">Appendicitis</option>
+                        <option value="">Appendix Problems</option>
+                        <option value="">Arthritis</option>
+                        <option value="">Aseptic meningitis</option>
+                        <option value="">Asthma</option>
+                        <option value="">Astigmatism</option>
+                        <option value="">Atherosclerosis</option>
+                        <option value="">Back pain</option>
+                        <option value="">Bacteria meningitits</option>
+                        <option value="">Beriberi</option>
+                        <option value="">BloodPressure</option>
+                        <option value="">Bone Cancer</option>
+                        <option value="">Botulism</option>
+                        <option value="">Brain Tumor</option>
+                        <option value="">Breast cancer</option>
+                        <option value="">Bronchitis</option>
+                        <option value="">Brucellosis</option>
+                        <option value="">Bubonic plague</option>
+                        <option value="">Calculi</option>
+                        <option value="">Campylobacter infection</option>
+                        <option value="">Cancer</option>
+                        <option value="">Candidiasis</option>
+                        <option value="">Carbon monoxide poisoning</option>
+                        <option value="">Celiacs disease</option>
+                        <option value="">Cerebral palsy</option>
+                        <option value="">Chagas disease</option>
+                        <option value="">Chalazion</option>
+                        <option value="">Chancroid</option>
+                        <option value="">Chickenpox</option>
+                        <option value="">Chlamydia</option>
+                        <option value="">Chlamydia trachomatis</option>
+                        <option value="">Cholera</option>
+                        <option value="">Chronic fatigue syndrome</option>
+                        <option value="">Circadian rhythm sleep disorder</option>
+                        <option value="">Coccyx Problems</option>
+                        <option value="">Cold &amp; Cough</option>
+                        <option value="">Colitis</option>
+                        <option value="">Condyloma</option>
+                        <option value="">Congestive heart disease</option>
+                        <option value="">Coronary heart disease</option>
+                        <option value="">Cretinism</option>
+                        <option value="">Crohn's Disease</option>
+                        <option value="">Dehydration</option>
+                        <option value="">Dengue</option>
+                        <option value="">Depression</option>
+                        <option value="">Diabetes mellitus</option>
+                        <option value="">Diabeties</option>
+                        <option value="">Dialysis</option>
+                        <option value="">Diphtheria</option>
+                        <option value="">Ear drum problems</option>
+                        <option value="">Ear Infection</option>
+                        <option value="">Ebola</option>
+                        <option value="">Emphysema</option>
+                        <option value="">Encephalitis</option>
+                        <option value="">Epilepsy</option>
+                        <option value="">Erectile dysfunctions</option>
+                        <option value="">Eye Infection</option>
+                        <option value="">Fever</option>
+                        <option value="">Filaria</option>
+                        <option value="">Foodborne illness</option>
+                        <option value="">Gangrene</option>
+                        <option value="">Gastroenteritis</option>
+                        <option value="">Genital herpes</option>
+                        <option value="">GERD</option>
+                        <option value="">Glaucoma</option>
+                        <option value="">Goitre</option>
+                        <option value="">Gonorrhea</option>
+                        <option value="">Hair problems</option>
+                        <option value="">Headache</option>
+                        <option value="">Heart Attack</option>
+                        <option value="">Heart disease</option>
+                        <option value="">Hepatitis A</option>
+                        <option value="">hepatitis b</option>
+                        <option value="">hepatitis c</option>
+                        <option value="">Hepatitis D</option>
+                        <option value="">Hepatitis E</option>
+                        <option value="">Histiocytosis (Childhood Cancer)</option>
+                        <option value="">HIV</option>
+                        <option value="">Human papillomavirus</option>
+                        <option value="">Huntington's disease</option>
+                        <option value="">Hypermetropia</option>
+                        <option value="">Hyperopia</option>
+                        <option value="">Hyperthyroidism</option>
+                        <option value="">Hypothyroid</option>
+                        <option value="">Impetigo</option>
+                        <option value="">Infertility</option>
+                        <option value="">Influenza</option>
+                        <option value="">Interstitial cystitis</option>
+                        <option value="">Iritis</option>
+                        <option value="">Iron-deficiency anemia</option>
+                        <option value="">Irritable bowel syndrom</option>
+                        <option value="">Jaundice</option>
+                        <option value="">Kidney Problems</option>
+                        <option value="">Knee Joint Pains</option>
+                        <option value="">Laryngitis</option>
+                        <option value="">Lead poisoning</option>
+                        <option value="">Leishmaniasis</option>
+                        <option value="">Leprosy</option>
+                        <option value="">Leukemia</option>
+                        <option value="">Loose Motions</option>
+                        <option value="">Lung Cancer</option>
+                        <option value="">Lungs Infection</option>
+                        <option value="">Lupus erythematosus</option>
+                        <option value="">Lymphogranulomavenereum</option>
+                        <option value="">Lymphoma</option>
+                        <option value="">Malaria</option>
+                        <option value="">Measles</option>
+                        <option value="">Melanoma</option>
+                        <option value="">Ménière's disease</option>
+                        <option value="">Meningitis</option>
+                        <option value="">Metastatic cancer</option>
+                        <option value="">Migraine</option>
+                        <option value="">Mononucleosis</option>
+                        <option value="">Mouth Cancer</option>
+                        <option value="">Mouth Infection</option>
+                        <option value="">Multiple myeloma</option>
+                        <option value="">Multiple sclerosis</option>
+                        <option value="">Mumps</option>
+                        <option value="">Muscular dystrophy</option>
+                        <option value="">Myasthenia gravis</option>
+                        <option value="">Myelitis</option>
+                        <option value="">Myoclonus</option>
+                        <option value="">Myopia</option>
+                        <option value="">Myxedema</option>
+                        <option value="">Nail Problems</option>
+                        <option value="">Necrotizing Fasciitis</option>
+                        <option value="">Neoplasm</option>
+                        <option value="">Nevervessness</option>
+                        <option value="">Night blindness</option>
+                        <option value="">Non-gonococcal urethritis</option>
+                        <option value="">Obesity</option>
+                        <option value="">Osteoarthritis</option>
+                        <option value="">Osteoporosis</option>
+                        <option value="">Parkinson's disease</option>
+                        <option value="">Pelvic inflammatory disease</option>
+                        <option value="">Peritonitis</option>
+                        <option value="">Pertussis</option>
+                        <option value="">Phenylketonuria</option>
+                        <option value="">Piles</option>
+                        <option value="">Plague</option>
+                        <option value="">Pneumonia</option>
+                        <option value="">Poliomyelitis</option>
+                        <option value="">Porphyria</option>
+                        <option value="">Pregnancy Problems</option>
+                        <option value="">Prostatitis</option>
+                        <option value="">Psoriasis</option>
+                        <option value="">Pulmonary embolism</option>
+                        <option value="">Rabies</option>
+                        <option value="">Retina Problems</option>
+                        <option value="">Rheumatic fever</option>
+                        <option value="">Rheumatic heart</option>
+                        <option value="">Rheumatism</option>
+                        <option value="">Rheumatoid arthritis</option>
+                        <option value="">Rickets</option>
+                        <option value="">Rocky Mountain spotted fever</option>
+                        <option value="">Rubella</option>
+                        <option value="">SARS</option>
+                        <option value="">Scabies</option>
+                        <option value="">Scarlet fever</option>
+                        <option value="">Schizophrenia</option>
+                        <option value="">Sciatic</option>
+                        <option value="">Sciatica</option>
+                        <option value="">Scleroderma</option>
+                        <option value="">Scrapie</option>
+                        <option value="">Scurvy</option>
+                        <option value="">Sepsis</option>
+                        <option value="">Septicemia</option>
+                        <option value="">Shigellosis</option>
+                        <option value="">Sickle-cell anemia</option>
+                        <option value="">Silicosis</option>
+                        <option value="">Sinusitis</option>
+                        <option value="">Skin Cancer</option>
+                        <option value="">Skin Problem</option>
+                        <option value="">Sleeplessness</option>
+                        <option value="">Spondylitis</option>
+                        <option value="">Stomach ulcers</option>
+                        <option value="">Strabismus</option>
+                        <option value="">Strep throat</option>
+                        <option value="">Streptococcal infection</option>
+                        <option value="">Swelling</option>
+                        <option value="">Synovitis</option>
+                        <option value="">Syphilis</option>
+                        <option value="">Taeniasis</option>
+                        <option value="">Tay-Sachs disease</option>
+                        <option value="">Teeth Problems</option>
+                        <option value="">Tennis elbow</option>
+                        <option value="">Teratoma</option>
+                        <option value="">Tetanus</option>
+                        <option value="">Thalassaemia</option>
+                        <option value="">Throat Cancer</option>
+                        <option value="">Throat Infection</option>
+                        <option value="">Thrush</option>
+                        <option value="">Thymoma</option>
+                        <option value="">Thyroid</option>
+                        <option value="">Tinnitus</option>
+                        <option value="">Tonsillitis</option>
+                        <option value="">Tooth decay</option>
+                        <option value="">Toxic shock syndrome</option>
+                        <option value="">Trichomoniasis</option>
+                        <option value="">Trisomy</option>
+                        <option value="">Tuberculosis</option>
+                        <option value="">Tumor</option>
+                        <option value="">Typhoid fever</option>
+                        <option value="">Typhus</option>
+                        <option value="">Ulcerative colitis</option>
+                        <option value="">Ulcers</option>
+                        <option value="">Uremia</option>
+                        <option value="">Urticaria</option>
+                        <option value="">Uterus Cancer</option>
+                        <option value="">Uveitis</option>
+                        <option value="">Varicella</option>
+                        <option value="">Varicose veins</option>
+                        <option value="">Viral fever</option>
+                        <option value="">Viral meningitis</option>
+                        <option value="">Vitiligo</option>
+                        <option value="">Von Hippel-Lindau disease</option>
+                        <option value="">Warts</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <!--Mother Tung-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>Mother Tongue : </label>
+                </div>
+                <div class="inputDiv">
+                    <select class="form-control">
+                        <option selected="selected" value="0">--Select Language--</option>
+                        <option value="">Bengali</option>
+                        <option value="">English</option>
+                        <option value="">Gujarati</option>
+                        <option value="">Hindi</option>
+                        <option value="">kannada</option>
+                        <option value="">Malayalam</option>
+                        <option value="">Marati</option>
+                        <option value="">Nepali</option>
+                        <option value="">Oriya</option>
+                        <option value="">Tamil</option>
+                        <option value="">Telugu</option>
+                        <option value="">Tilu</option>
+                        <option value="">Urdu</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <!--Languages Tung-->
+            <div class="form-group col-sm-6">
+                <div class="lableDiv">
+                    <label for=""><span class="mandatory">*</span>Languages Known : </label>
+                </div>
+                <div class="inputDiv">
+                    <select multiple class="form-group LanguageDiv" name="language">
+                        <option value="">Bengali</option>
+                        <option value="">English</option>
+                        <option value="">Gujarati</option>
+                        <option value="">Hindi</option>
+                        <option value="">kannada</option>
+                        <option value="">Malayalam</option>
+                        <option value="">Marati</option>
+                        <option value="">Nepali</option>
+                        <option value="">Oriya</option>
+                        <option value="">Tamil</option>
+                        <option value="">Telugu</option>
+                        <option value="">Tilu</option>
+                        <option value="">Urdu</option>
+                    </select>
+                    <p> (Use ctrl button to select other languages known)</p>
+                </div>
+            </div>
+
+            <div class="form-group col-sm-6 emptyDiv"> </div>
+        </form>
+    </div>
+
+
+
+    <div class="container referedDiv">
+        <p>Refered By</p>
+        <div class="col-sm-4">
+            <div class="Ref_lableDiv">
+                <label for=""><span class="mandatory">*</span> First Name : </label>
+            </div>
+            <div class="Ref_inputDiv">
+                <input type="text" class="form-control" id="" placeholder="Enter your First Name" name="Referred First Name">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="Ref_lableDiv">
+                <label for=""><span class="mandatory">*</span>Phone No : </label>
+            </div>
+            <div class="Ref_inputDiv">
+                <input type="number" class="form-control" id="" placeholder="Enter your Mobile Number" name="Referred Phone Number">
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="Ref_lableDiv">
+                <label for="email"><span class="mandatory">*</span>Email : </label>
+            </div>
+            <div class="Ref_inputDiv">
+                <input type="email" class="form-control" id="" placeholder="Enter your email" name="Referred email">
+            </div>
+        </div>
+
+        <button class="btn-success saveButton" type="submit">Save Details</button>
+    </div>
+</body>
+
+</html>

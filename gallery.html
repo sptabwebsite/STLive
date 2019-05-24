@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spiritual Tablet | Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/ourStyles.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--ADDING FAVICON-->
+    <link rel="icon" href="favicon.png" sizes="16x16">
+    
+    <!--JAVASCRIPT-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
+<style>
+    #galleryPage {
+        background-color: #022f5a;
+    }
+
+    .thumbnail {
+        margin-bottom: 6px;
+    }
+
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+        margin-top: 10%;
+        width: 5%;
+    }
+</style>
+    
+</head>
+
+<body>
+
+     <script>
+        displayMenu();
+    </script>
+
+<div class="container BodyAread">
+
+    <div class="row">
+        <div class="container" id="ContactRegisteredOffice">
+            
+                    <h2 class="mainHeading">Gallery</h2>
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                        <a title="Image 1" href="#"> 
+						<img class="thumbnail img-responsive" id="image-1" src="images/data/photos/Spiritual Tablets Workshop at Madugulla.jpg">
+					   </a>
+                        <p class="galleryName">Spiritual Tablets Workshop at Kadtal</p>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <a title="Image 2" href="#"> 
+						<img class="thumbnail img-responsive" id="image-2" src="images/data/photos/Spiritual Tablets Workshop in Soul Trends.jpg">
+					</a>
+                        <p class="galleryName">Spiritual Tablets Workshop in Soul Trends</p>
+                        </div>
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <a title="Image 3" href="#"> 
+						<img class="thumbnail img-responsive" id="image-3" src="images/data/photos/Spiritual tablets workshop kadtal.jpg">
+					</a>
+                            <p class="galleryName">Spiritual tablets workshop Kadtal</p>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                            <a title="Image 3" href="#"> 
+						<img class="thumbnail img-responsive" id="image-4" src="images/data/photos/Tyagaraja Aradhana at Visakhapatnam.jpg">
+					</a>
+                            <p class="galleryName">Gallery Name</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+
+            <div class="hidden" id="img-repo">
+
+                <!-- #image-1 -->
+                <div class="item" id="image-1">
+                    <img class="thumbnail img-responsive" title="Image 1" src="images/data/photos/Spiritual%20Tablets%20Workshop%20at%20Kadtal.jpg">
+                </div>
+                <div class="item" id="image-1">
+                    <img class="thumbnail img-responsive" title="Image 2" src="images/data/photos/Spiritual%20Tablets%20Workshop%20at%20Kadtal.jpg">
+                </div>
+                <div class="item" id="image-1">
+                    <img class="thumbnail img-responsive" title="Image 3" src="images/data/photos/Spiritual%20Tablets%20Workshop%20at%20Kadtal.jpg">
+                </div>
+
+                <!-- #image-2 -->
+                <div class="item" id="image-2">
+                    <img class="thumbnail img-responsive" title="Image 1" src="images/data/photos/Spiritual Tablets Workshop in Soul Trends.jpg">
+                </div>
+                <div class="item" id="image-2">
+                    <img class="thumbnail img-responsive" title="Image 2" src="images/data/photos/Spiritual Tablets Workshop in Soul Trends.jpg">
+                </div>
+                <div class="item" id="image-2">
+                    <img class="thumbnail img-responsive" title="Image 3" src="images/data/photos/Spiritual Tablets Workshop in Soul Trends.jpg">
+                </div>
+
+                <!-- #image-3-->
+                <div class="item" id="image-3">
+                    <img class="thumbnail img-responsive" title="Image 1" src="images/data/photos/Spiritual tablets workshop kadtal.jpg">
+                </div>
+                <div class="item" id="image-3">
+                    <img class="thumbnail img-responsive" title="Image 2" src="images/data/photos/Spiritual tablets workshop kadtal.jpg">
+                </div>
+                <div class="item" id="image-3">
+                    <img class="thumbnail img-responsive" title="Image 3" src="images/data/photos/Spiritual tablets workshop kadtal.jpg">
+                </div>
+                
+                
+                <!-- #image-4-->
+                <div class="item" id="image-4">
+                    <img class="thumbnail img-responsive" title="Image 1" src="images/data/photos/Tyagaraja Aradhana at Visakhapatnam.jpg">
+                </div>
+                <div class="item" id="image-4">
+                    <img class="thumbnail img-responsive" title="Image 2" src="images/data/photos/Tyagaraja Aradhana at Visakhapatnam.jpg">
+                </div>
+                <div class="item" id="image-4">
+                    <img class="thumbnail img-responsive" title="Image 3" src="images/data/photos/Tyagaraja Aradhana at Visakhapatnam.jpg">
+                </div>
+                
+                
+
+            </div>
+
+            <div class="modal" id="modal-gallery" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal">×</button>
+                            <h3 class="modal-title"></h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="modal-carousel" class="carousel">
+
+                                <div class="carousel-inner"> </div>
+
+                                <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+<!--*********** FOOTER SECTION ***********-->
+    <script>displayFooter();</script>
+</body>
+
+</html>

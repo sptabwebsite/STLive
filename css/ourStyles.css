@@ -1,0 +1,824 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    height: 100%;
+    background-image: url(../images/sliders/backgroundImg.jpg);
+    background-size: cover 100%;
+    background-position: center;
+}
+.BodyAread{
+    background-color: #f8f8f8;
+    padding: 0;
+}
+
+.homeSlideDiv{
+    padding: 0;
+    margin-top: 50px !important;
+    margin-bottom: -2px;
+    
+}
+.homeSlideDiv img{
+    width: 100%;
+}
+
+
+.navbar-fixed-top{
+    background-color: #034483
+}
+nav li a {
+    color: #fff !important;
+}
+
+.navbar-brand:hover,
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #022f5a !important;
+    margin: 0;
+    color: #3f9ffd
+}
+
+.dropdown-menu > li > a:hover ,
+.dropdown-menu > li > a:focus {
+    background-color: #022f5a !important;
+    margin: 0;
+    color: #fff !important;
+}
+
+
+.dropdown a {
+    color: #3f9ffd;
+}
+
+.dropdown-menu {
+    background-color: #034483 !important;
+    min-width: 139px !important;
+    box-shadow: none;
+    margin-top: -1px !important;
+    z-index: 1000
+}
+
+.navbar-brand,
+.dropdown-menu li a {
+    color: #3f9ffd;
+}
+
+
+.navbar-fixed-top .navbar-nav > .open > a,
+.navbar-fixed-top .navbar-nav > .open > a:hover,
+.navbar-fixed-top .navbar-nav > .open > a:focus {
+  background-color: #022f5a !important;
+}
+
+
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+
+.navbar-nav {
+    padding-bottom: 0;
+    margin-right: 1%;
+    font-size: 13px;
+}
+
+.logoDiv {
+    width: 10vw;
+    display: inline-table;
+    vertical-align: middle;
+    position: relative;
+}
+
+.navbar-toggle{
+    border-color: #3f9ffd
+}
+.icon-bar{
+  background-color: #fff !important
+}
+
+
+/*
+@media (min-width: 950px){
+    .navbar-toggle {
+    display: none;
+}
+}
+*/
+/*******HOME PAGE*******/
+.mainHeading{
+    color: #022f5a;
+}
+
+.info{
+    color: #555;
+    text-align: justify;
+    line-height: 130%;
+    font-size: 17px
+}
+
+.iconDiv{
+    margin: auto;
+    text-align: center;
+    color: #034483;
+    cursor: pointer;
+    margin: 5% 0% 5% 0% ;
+}
+.iconDiv:hover{
+    filter: brightness(150%)
+}
+
+#SpiritualTablets{
+    padding: 2% 5% 4% 5%;
+/*    background-color: #ececec;*/
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    width:100%;
+}
+
+#PatientRegistration{
+    padding: 2% 5% 4% 5%;
+    width:100%;
+}
+
+#Introduction{
+   padding: 0% 5% 3% 5%;
+    width:100%;
+}
+
+
+.footerDiv{
+    background-color: #022f5a;
+    bottom:0;
+    margin-bottom: 0;
+    color: #ccc;
+    padding-bottom: 1%;
+}
+
+.footerDiv  h5{
+ line-height: 150%
+}
+
+.socialMedia a{
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc
+}
+
+.socialMedia :hover{
+    color: #fff
+}
+.footerHeading{
+     color: #3f9ffd;
+    font-weight: bold;
+}
+
+.contactNo a{
+    text-decoration: none;
+     color: #ccc;
+}
+
+.contactNo a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/******SPIRITUAL TABLATE PAGE******/
+
+.ST_HeaderSection{
+       padding: 0% 5% 0% 5%;
+}
+
+#SPbooks .container,
+#SPAudios .container{
+    width: 100%;
+}
+
+
+
+#selectLanguage{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.selectLanguageDiv{
+    float: right;
+    width: 20%;;
+    margin-top: -3.5%;
+}
+
+.LanguageHilight{
+    margin: auto;
+    background-color: #eee;
+    color: #022f5a;
+    text-align: center;
+    font-weight: bold;
+    padding: .5%;
+    clear: both;
+    width: 100%
+}
+
+.BooksDiv{
+/*    width: 15.5%;*/
+/*    padding: 0;*/
+/*    margin-left: 1%;*/
+    text-align: center !important;
+    margin-top: 1% ;
+    margin-bottom: 1%;
+}
+
+.BooksDiv:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+/******CONTACT PAGE******/
+
+.tableHeading{
+    background-color: #888;
+    font-weight: bold;
+}
+.tableHeading > tr > th{
+    text-align: center
+}
+
+.table-bordered tbody > tr > td:nth-child(1){
+    text-align: center;
+}
+
+/******ABOUT US PAGE******/
+
+#ContactPrimaryCenters,
+#ContactAdmissionCenters,
+#ContactHolisticCenters,
+#Aboutintroduction,
+#AboutPrinciple,
+#AboutPyramidDoctors,
+#AboutOutlets,
+#AboutOrganisation,
+#SPbooks,
+#SPAudios,
+#SPShortfilims,
+#SPvideos,
+#SPNewsLetters{
+    padding: 2% 5% 4% 5%;
+}
+
+#ContactRegisteredOffice{
+    padding: 2% 5% 4% 5%;
+    height: 250%;
+}
+
+.videoDiv{
+    width: 40%;
+}
+
+#ContactRegisteredOffice h4,
+#ContactAdmissionCenters h4{
+    line-height: 180%;
+}
+
+/***************Counselors Page***************/ 
+
+.CounselorsMainDiv{
+    width: 80%;
+    margin: auto;
+    display: table;
+    margin-top: 2%;
+    border-bottom: 1px solid gray;
+}
+
+.CounselorImgDiv{
+    width: 25%;
+    display: inline-table;
+    float: left;
+    text-align: center;
+}
+
+.CounselorImgDiv img{
+    width: 70%;
+    display: inline-table;
+    cursor: pointer;
+    
+}
+
+.CounselorImgDiv img:hover {
+    filter: brightness(110%);
+}
+
+.CounselorsInfoDiv{
+    width: 74%;
+    display: inline-table;
+}
+
+.dataTable{
+    border: 0;
+}
+
+.dataTable tr{
+    border-top: 2px solid #f8f8f8  !important;
+}
+
+.dataTable tbody > tr > td:nth-child(1){
+    width: 25%;
+    font-weight: bold;
+    
+}
+.dataTable tbody > tr > td:nth-child(2){
+    width: 2%;
+    font-weight: bold;
+}
+
+.CounselorName{
+    font-weight: bold;
+    color: #022f5a;
+    margin-bottom: 0;
+    margin-top: 3%
+}
+.CounselorDesignation{
+    font-style: italic;
+}
+
+#loginPage{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.loginBody{
+    width: 20%;
+    background-color: #fff;
+    height: 60%;
+       position: relative;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.userIconDiv{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15%;
+    clear: both;
+}
+
+.loginCloseButton{
+    float: right;
+    cursor: pointer;
+    color: #777;
+    font-size: 18px
+}
+
+.loginCloseButton:hover{
+    color: #555;
+}
+
+#userName,
+#userPasword{
+    height: 40px;
+    margin-bottom: 5%;
+    
+}
+
+.loginButton:hover{
+    background-color: #00904f;
+}
+
+.loginButton{
+    width: 100%;
+    background-color: #00b06b;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15%;
+    padding: 3% 2% 2% 2%; 
+}
+
+.forgotPassword{
+    float: right;
+    margin-top: 5%;
+    cursor: pointer;
+    
+}
+
+/*****GALLERY PAGE*****/
+
+.galleryName{
+    text-align: center;
+    color: #022f5a;
+}
+
+.modal-dialog{
+/*    width: 60% !important;*/
+    margin-top: 8% !important;
+}
+
+.modal-body{
+    width: 100% !important;
+}
+
+.carousel-inner img{
+/*    width: 100%;*/
+    margin: auto;
+}
+
+/*********EVENT PAGE*********/
+.eventImgDiv{
+    width: 40%;
+    display: inline-table;
+    margin-bottom: 2%;
+}
+
+.eventImgDiv img{
+    width: 100%;
+}
+
+.eventInfoDiv{
+    width: 59%;
+    display: inline-table;
+    float: right;
+}
+
+/***************CSS FOR FORMS***************/
+
+.form-control {
+    width: 100% !important;
+}
+
+
+.mandatory {
+    color: red;
+    font-weight: bold;
+}
+
+.lableDiv {
+    width: 30%;
+    text-align: left;
+    display: inline-table;
+
+}
+
+.inputDiv {
+    width: 69%;
+    display: inline-table;
+    margin-bottom: 3%;
+}
+
+.ageDiv {
+    width: 49%;
+    display: inline-table;
+}
+
+.yearDiv {
+    width: 40% !important;
+    margin-left: 8%;
+}
+
+.Ref_inputDiv {
+    width: 55%;
+    display: inline-table;
+    margin-bottom: 2%;
+}
+
+.Ref_lableDiv {
+    width: 43%;
+    display: inline-table;
+}
+
+.selectpicker {
+    width: 50%;
+}
+
+.LanguageDiv {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.saveButton {
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    height: auto;
+    padding: 1%;
+    border-radius: .5em
+}
+
+.referedDiv {
+    background-color: #f2f2f2;
+    padding: 1%;
+}
+
+.error {
+    color: red;
+    margin-right: 2%;
+    float: right;
+    /*    display: none;*/
+}
+
+
+
+
+/***************Patient Registration form***************/
+
+.personalDetails {
+    margin-top: 2%;
+    margin-bottom: .8%;
+}
+
+#personalDetails,
+#IllnessDetails,
+#familyDetails,
+#RequestForCounseling{
+    width: 100% !important
+}
+
+.detailsButton {
+    display: inline;
+    padding: 1% 1% 1% 1%;
+    background-color: #ededed;
+    border-radius: .5em .5em .0em .0em;
+    cursor: pointer;
+    border-top: .05em solid #ccc;
+    border-right: .05em solid #ccc;
+    border-left: .05em solid #ccc;
+}
+
+#button-1 {
+    background-color: #ededed;
+}
+
+#button-2,
+#button-3 {
+    background-color: #dcdcdc;
+}
+
+.detailsButton:hover {
+    background-color: #dcdcdc;
+    color: #000;
+}
+
+.detailsButtonActive {
+    display: inline;
+    padding: 1%;
+/*    background-color: #dcdcdc;*/
+    background-color: #ededed;
+    border-radius: .5em .5em 0em 0em;
+    cursor: pointer;
+}
+
+
+.BG_Color_1 {
+    width: 100% !important;
+    background-color: #ededed;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+
+.BG_Color_2 {
+     width:100% !important;
+    background-color: #f1f1f9;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+/***************Patient Registration form***************/
+
+
+.FormNote{
+    color: red;
+    margin-top: 3%;
+}
+
+.medYerDiv {
+    width: 30% !important;
+    display: inline-table;
+}
+
+.medMnthDiv {
+    width: 36% !important;
+    display: inline-table;
+}
+
+.medYear {
+    width: 50% !important;
+    margin-left: 2%;
+    text-align: center !important;
+}
+
+#SpiritualPractices {
+    background-color: #f9f9f9
+}
+
+#IllnessDetails {}
+
+#IllnessHistory {
+    background-color: #d6f9f9;
+}
+
+/*****ENQUARY FORM*****/
+#sucessQueary{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 20vw;
+    padding: 5%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    clear: both;
+    display: none;
+    background-color: #f1f1f1;
+   box-shadow: 8px 5px 5px #888888;
+    margin-top: 5%
+}
+
+#Close_sucessQueary{
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15%;
+
+}
+
+#Abroad,
+#Abroad,
+#AndamanAndNicobar,
+#AndhraPradesh,
+#ArunachalPradesh,
+#Assam,
+#Bihar,
+#Chandigarh,
+#Chhattisgarh,
+#DadraAndNagarHaveli,
+#DamanAndDiu,
+#Goa,
+#Gujarat,
+#Haryana,
+#HimachalPradesh,
+#JammuAndKashmir,
+#Jharkhand,
+#Karnataka,
+#Kerala,
+#Lakshadweep,
+#MadhyaPradesh,
+#Maharashtra,
+#Manipur,
+#Meghalaya,
+#Mizoram,
+#Nagaland,
+#newDelhi,
+#Odisha,
+#Puducherry,
+#Punjab,
+#Rajasthan,
+#Sikkim,
+#TamilNadu,
+#Telangana,
+#Tripura,
+#UttarPradesh,
+#Uttarakhand,
+#WestBengal,
+
+#IllnessDetails,
+#familyDetails,
+#PR_Res_AndamanAndNicobar,
+#PR_Res_AndhraPradesh,
+#PR_Res_ArunachalPradesh,
+#PR_Res_Assam,
+#PR_Res_Bihar,
+#PR_Res_Chandigarh,
+#PR_Res_Chhattisgarh,
+#PR_Res_DadraAndNagarHaveli,
+#PR_Res_DamanAndDiu,
+#PR_Res_Goa,
+#PR_Res_Gujarat,
+#PR_Res_Haryana,
+#PR_Res_HimachalPradesh,
+#PR_Res_JammuAndKashmir,
+#PR_Res_Jharkhand,
+#PR_Res_Karnataka,
+#PR_Res_Kerala,
+#PR_Res_Lakshadweep,
+#PR_Res_MadhyaPradesh,
+#PR_Res_Maharashtra,
+#PR_Res_Manipur,
+#PR_Res_Meghalaya,
+#PR_Res_Mizoram,
+#PR_Res_Nagaland,
+#PR_Res_newDelhi,
+#PR_Res_Odisha,
+#PR_Res_Puducherry,
+#PR_Res_Punjab,
+#PR_Res_Rajasthan,
+#PR_Res_Sikkim,
+#PR_Res_TamilNadu,
+#PR_Res_Telangana,
+#PR_Res_Tripura,
+#PR_Res_UttarPradesh,
+#PR_Res_Uttarakhand,
+#PR_Res_WestBengal,
+#PR_Res_Abroad,
+
+#PR_ofc_AndamanAndNicobar,
+#PR_ofc_AndhraPradesh,
+#PR_ofc_ArunachalPradesh,
+#PR_ofc_Assam,
+#PR_ofc_Bihar,
+#PR_ofc_Chandigarh,
+#PR_ofc_Chhattisgarh,
+#PR_ofc_DadraAndNagarHaveli,
+#PR_ofc_DamanAndDiu,
+#PR_ofc_Goa,
+#PR_ofc_Gujarat,
+#PR_ofc_Haryana,
+#PR_ofc_HimachalPradesh,
+#PR_ofc_JammuAndKashmir,
+#PR_ofc_Jharkhand,
+#PR_ofc_Karnataka,
+#PR_ofc_Kerala,
+#PR_ofc_Lakshadweep,
+#PR_ofc_MadhyaPradesh,
+#PR_ofc_Maharashtra,
+#PR_ofc_Manipur,
+#PR_ofc_Meghalaya,
+#PR_ofc_Mizoram,
+#PR_ofc_Nagaland,
+#PR_ofc_newDelhi,
+#PR_ofc_Odisha,
+#PR_ofc_Puducherry,
+#PR_ofc_Punjab,
+#PR_ofc_Rajasthan,
+#PR_ofc_Sikkim,
+#PR_ofc_TamilNadu,
+#PR_ofc_Telangana,
+#PR_ofc_Tripura,
+#PR_ofc_UttarPradesh,
+#PR_ofc_Uttarakhand,
+#PR_ofc_WestBengal,
+#PR_ofc_Abroad {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .form-control {
+        width: 95% !important;
+        margin-left: 0%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .ageDiv {
+        width: 50%;
+        display: inline-table;
+    }
+
+    .yearDiv {
+        width: 90% !important;
+        margin-left: 0%;
+    }
+
+    .emptyDiv {
+        display: none;
+    }
+
+    .LanguageDiv {
+        width: 95%;
+    }
+
+    .saveButton {
+        margin-top: 0;
+        margin-bottom: 5%;
+        margin-right: 7%;
+    }
+
+    .Ref_inputDiv {
+        width: 69.2%;
+
+    }
+    .Ref_lableDiv {
+        width: 30%
+    }
+
+    .medYear {}
+
+}
