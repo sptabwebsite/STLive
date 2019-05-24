@@ -201,6 +201,7 @@ nav li a {
 
 
 
+
 #selectLanguage{
     border-radius: 5px;
     width: 100%;
@@ -417,6 +418,20 @@ nav li a {
     margin-top: 5%;
     cursor: pointer;
     
+}
+
+
+/*PATIENT EXP PAGE*/
+
+.expTable{
+    width: 80% !important;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.expTable th{
+    background-color: #999;
+    font-weight: bold;
 }
 
 /*****GALLERY PAGE*****/
@@ -818,7 +833,20 @@ nav li a {
     .Ref_lableDiv {
         width: 30%
     }
+    
+    .booksName{
+        font-size: 14px
+    }
+    
+    .footerDiv  h5,
+    .footerDiv  h4,
+    .contactNo,
+    .socialMedia,
+    .footerHeading{
+        margin-left: 8%
+    }
 
     .medYear {}
 
 }
+
