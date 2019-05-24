@@ -47,8 +47,8 @@ function displayMenu(){
                     <a href="testimonials" class="dropdown-toggle" data-toggle="dropdown"> Testimonials <b class="caret"></b></a>\
                     <ul class="dropdown-menu">\
                         <li><a href="testmonials.html">Counsellors</a></li>\
-                        <li><a href="">Pyramid Doctors</a></li>\
-                        <li><a href="">Patients</a></li>\
+                        <li id="doctorExpPage"><a href="testmonials_doctor.html">Pyramid Doctors</a></li>\
+                        <li id="patientExpPage"><a href="testmonials_patient.html">Patients</a></li>\
                     </ul>\
                 </li>\
 \
@@ -119,6 +119,28 @@ function displayFooter(){
             <h4 class="socialMedia"><a href="https://www.facebook.com/spiritualhealth.care" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> &nbsp; &nbsp;<a href="https://www.youtube.com/channel/UCId8SiDTSyYh0IqsDxbEMiQ" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></h4>\
         </div>\
     </div>')
+}
+
+
+function validateSelectExperience(){
+    var elem = document.getElementById('experienceLanguage').value;
+    if (elem == "-" || elem == "English" ){
+//        document.getElementById("NameofLanguage").innerHTML="English Books";
+        document.getElementById("EnglishAudios").style.display="block"
+        document.getElementById("TeluguAudios").style.display="none"
+        document.getElementById("patientText").style.display="none"
+    }else if(elem == "Telugu"){
+//        document.getElementById("NameofLanguage").innerHTML="Telugu Books";
+            document.getElementById("TeluguAudios").style.display="block"
+        document.getElementById("EnglishAudios").style.display="none"
+        document.getElementById("patientText").style.display="none"
+    }else if (elem == "Tamil"){
+//        document.getElementById("NameofLanguage").innerHTML="Tamil Books";
+            document.getElementById("patientText").style.display="block"
+        document.getElementById("EnglishAudios").style.display="none"
+        document.getElementById("TeluguAudios").style.display="none"
+    }
+    return true;
 }
 
 
